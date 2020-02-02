@@ -63,3 +63,35 @@ end function
 # and technically this operation is maybe better called cross-correlation 
 # but most of deep learning literature just calls it the convoultion operator 
 
+# One Layer of Concolutional Neural Network #
+# Remember: parameters and bias 
+# f[l] = filter size 
+# p[l] = padding 
+# s[l] = stride 
+
+# Input: n[H](l-1) X n[w]*(l-1) X n[c](l-1)
+# Output: n[H](l) X n[w]*(l) X n[c](l)
+
+# Types pf layers in a convolutional network 
+# - COncolution 
+# - Pooling 
+# - Fully connected 
+
+# Pooling Layers #
+# Max pooling 
+# Reduce number of parameters 
+# Provide translation invariance 
+
+# Average pooling 
+# Summarzie the presence of features in an input image 
+# <A gentle Introduction to Pooling Layers of Concolutional Neural Networks>
+# (https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/)
+# General Procedure:
+# Input -> CONV 1 -> Pooling -> CONV 2 -> Pooling -> FC -> FC -> Softmax 
+
+# Why Use CNN ? #
+
+# parameter sharing: 
+# A feature detector that is useful in one part of the image is probably useful in another part of the image 
+# Sparsity of connections: 
+# In each layer, each output value depends only on a small number of inputs 
